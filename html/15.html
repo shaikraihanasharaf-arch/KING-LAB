@@ -1,0 +1,348 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+b
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #111;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        /* Home */
+        #home {
+            min-height: 600px;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        #home h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: #0072ff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #111;
+            color: white;
+        }
+
+        /* About */
+        #about {
+            min-height: 500px;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 80px 30px;
+        }
+
+        #about h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        /* Services */
+        #services {
+            min-height: 500px;
+            background-color: #e8f8f5;
+            text-align: center;
+            padding: 70px 30px;
+        }
+
+        #services h1 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #0072ff;
+            margin-bottom: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            transition: 0.3s;
+        }
+
+        /* Contact */
+        #contact {
+            min-height: 600px;
+            background-color: #ffe6ee;
+            text-align: center;
+            padding: 70px 30px;
+        }
+
+        #contact h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form button {
+            background-color: #0072ff;
+            color: white;
+            border: none;
+            padding: 13px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #111;
+        }
+
+        /* Success Message */
+        #success-message {
+            display: none;
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Website</h2>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            Explore our modern and beautiful website
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h1>About Us</h1>
+
+        <p>
+            Welcome to our website. We provide simple, creative
+            and useful digital solutions. Our goal is to create
+            modern websites that are easy to use and attractive.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h1>Our Services</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Web Design</h2>
+
+                <p>
+                    We create attractive and responsive websites
+                    using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Development</h2>
+
+                <p>
+                    We develop simple and useful web applications
+                    for students and businesses.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>AI Solutions</h2>
+
+                <p>
+                    We explore modern Artificial Intelligence
+                    technologies and applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h1>Contact Us</h1>
+
+        <!--
+            Replace YOUR_FORM_ID with your Formspree form ID.
+            Example:
+            https://formspree.io/f/abcd1234
+        -->
+
+        <form
+            class="contact-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            onsubmit="showSuccessMessage()"
+        >
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <input
+                type="text"
+                name="subject"
+                placeholder="Enter subject"
+                required
+            >
+
+            <textarea
+                name="message"
+                placeholder="Enter your message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+            <p id="success-message">
+                Your message has been sent successfully!
+            </p>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 My Website | All Rights Reserved
+        </p>
+    </footer>
+
+    <script>
+        function showSuccessMessage() {
+            document.getElementById("success-message").style.display = "block";
+        }
+ 
+```

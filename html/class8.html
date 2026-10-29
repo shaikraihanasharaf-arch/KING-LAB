@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eafcff;
+            color: #17324d;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #222;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Home Section */
+        #home {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #e8fbff;
+        }
+
+        #home h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        #home p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #222;
+        }
+
+        /* About Section */
+        #about {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        #about h2 {
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        /* Projects Section */
+        #projects {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #e8fbff;
+        }
+
+        .project-box {
+            display: inline-block;
+            width: 250px;
+            margin: 15px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #aaa;
+        }
+
+        .project-box h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        #contact p {
+            margin: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            nav {
+                height: auto;
+                padding: 15px;
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 15px;
+            }
+
+            nav ul li {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <h2>sk raihan</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+
+        <h1>Hi, I'm A. SK RAIHAN 👋</h1>
+
+        <p>Welcome to my portfolio website!</p>
+
+        <!-- Change this image URL to your own image -->
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zDMYnGheNT1l7pEW3R5N3Uf4--yCjRprCG9W5WQ58g&s=10"
+            class="profile-img"
+            alt="Profile Image">
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a web development learner who loves building
+            simple and creative websites. I am interested in
+            HTML, CSS, JavaScript and Artificial Intelligence.
+        </p>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-box">
+            <h3>Portfolio Website</h3>
+            <p>A simple personal portfolio using HTML and CSS.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Student Registration</h3>
+            <p>A student registration form created using HTML.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>AI Project</h3>
+            <p>A simple project based on Artificial Intelligence.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p><strong>Email:</strong> example@gmail.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Location:</strong> Andhra Pradesh, India</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 A. Prathap | My Portfolio</p>
+
+    </footer>
+
+</body>
+
+</html>

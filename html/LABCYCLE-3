@@ -1,0 +1,83 @@
+V<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Multimedia Web Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:white;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color:black;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color:blue;
+        }
+
+        audio,
+        video {
+            width: 80%;
+            margin: 15px;
+        }
+
+        footer {
+            background-color:black;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Multimedia Web Page</h1>
+        <p>Audio and Video Examples</p>
+    </header>
+
+        <section>
+            <h2>Audio</h2>
+
+            <p>Listen to the audio:</p>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+        <section>
+            <h2>Video</h2>
+
+            <p>Watch the video:</p>
+
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </section>
+    <footer>
+        <p>2026 Multimedia Web Page</p>
+    </footer>
+
+</body>
+
+</html>

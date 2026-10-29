@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boxes Inside Box</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: rgb(173, 70, 70);
+            text-align: center;
+        }
+
+        .main-box {
+            width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 5px solid rgb(35, 26, 26);
+            background-color: rgb(12, 177, 189);
+             background-image: url( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRynN_jKFSeoi8oVFE-74p1p9WdQv4VQIlHZQpsmS_aFw&s=10");
+            background-size: 20%
+        }
+
+        .box {
+            width: 120px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            padding-top: 20px;
+            box-sizing: border-box;
+            border: 3px solid black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .box1 { background-color: lightblue; }
+        .box2 { background-color: lightgreen; }
+        .box3 { background-color: lightpink; }
+        .box4 { background-color: yellow; }
+        .box5 { background-color: orange; }
+        .box6 { background-color: violet; }
+        .box7 { background-color: lightcyan; }
+        .box8 { background-color: lightcoral; }
+        .box9 { background-color: lightgoldenrodyellow; }
+        .box10 { background-color: lightsalmon; }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+
+        <div class="box box6">Box 6</div>
+        <div class="box box7">Box 7</div>
+        <div class="box box8">Box 8</div>
+        <div class="box box9">Box 9</div>
+        <div class="box box10">Box 10</div>
+
+    </div>
+
+</body>
+</html>

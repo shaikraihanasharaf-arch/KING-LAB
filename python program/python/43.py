@@ -1,0 +1,10 @@
+text="hell python world"
+print("original string:",text)
+print("upper:",text.upper())
+print("lower:",text.lower())
+print("strip:",text.strip())
+words=text.strip().split()
+print("split:",words)
+print("join:",' '.join(words))
+print("replace:",text.replace("python","java"))
+print("find:",text.find("python"))
